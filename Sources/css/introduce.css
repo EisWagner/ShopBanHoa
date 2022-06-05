@@ -1,0 +1,12 @@
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 10%;
+}
+.main1{
+    padding: 20px;
+}
+.main2{
+    padding: 20px;
+}

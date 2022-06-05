@@ -1,0 +1,107 @@
+#content{
+    display: flex;
+    margin: 60px 6%;
+}
+#title{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+/*==LEFT-CART*/
+#left-cart table {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+#left-cart table tr td div{
+    margin:auto;
+    padding-left: 5px;
+}
+#left-cart table tr td{
+    margin-right: 10px;
+    text-align: center;
+}
+#left-cart table tr th{
+    width: 170px;
+}
+.soLuong{
+    display:inline-block; 
+    border:1px solid #666; 
+}
+.soLuong input{ 
+    width: 30px;
+    border: 0;
+}
+.soLuong .soLuongGiam{ 
+    border-right:1px solid #666; 
+    display:inline-block; 
+    padding:5px 10px;
+}
+.soLuong .soLuongTang{ 
+    border-left:1px solid #666; 
+    display:inline-block; 
+    padding:5px 10px;
+}
+.a-text{
+    text-decoration: none;
+    color: black;
+}
+.a-text:hover{
+    color: #CC2121;
+}
+.continue{
+    margin-top: 30px;
+}
+.continue a{
+    text-decoration: none;
+    background-color: #CC2121;
+    color:white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.continue a:hover{
+    color:white;
+    background-color: green;
+}
+
+/*==RIGHT-CART*/
+#right-cart{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+.cart-totals tr th{
+    padding-bottom: 20px;
+    text-align: right;
+}
+.cart-totals table {
+    width: 400px;
+    height: 10px;
+}
+.cart-totals tr td{
+    padding: 5px 0px;
+    text-align: left;
+}
+.cart-totals div{
+    margin-top: 30px;
+}
+.vouchers {
+    color: green;
+    font-size: 20px;
+    text-align: left;
+}
+.vouchers input{
+    border-radius: 5px;
+    border: 1px solid #222;
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.click a{
+    text-decoration: none;
+    color: white;
+    background-color:#CC2121;
+    font-weight: bold;
+    padding: 10px 168px;
+    border-radius: 3px;
+}
+.click:hover a{
+    background-color:green;
+}

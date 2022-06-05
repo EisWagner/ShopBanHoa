@@ -1,0 +1,73 @@
+#space{
+    height: 100px;
+}
+#content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+#title{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#products-list{
+    display: grid;
+    grid-template-areas: 
+        "list products"
+    ;
+    grid-template-columns: 1.1fr 3.5fr;
+}
+/*
+    DANH MỤC SẢN PHẨM và SẢN PHẨM
+*/
+#list{
+    grid-area: list;
+    
+}
+.product-groups{
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.product-groups p{
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.product-groups ul li{
+    height: 45px;
+}
+.product-groups ul li a{
+    text-decoration: none;
+    color:black;
+    line-height: 45px;
+    font-size: 17px;
+    padding-left: 10px;
+    opacity: 0.8;
+}
+.product-groups ul li:hover a{
+    color:#CC2121;
+}
+
+.product-price{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.product-price p{
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+#products{
+    grid-area: products;
+}
+#products img{
+    height: 200px;
+}

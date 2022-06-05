@@ -1,0 +1,177 @@
+/*Header*/
+#header {
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  z-index:1;
+  position: fixed;
+  background-color: wheat;
+}
+.logo{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.logo a img{
+  width: 200px;
+  height: 80px;
+}
+#main{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+#main li{
+  position: relative;
+  list-style: none;
+}
+#main li a{
+  text-decoration: none;
+  color: black;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#main li a:hover{
+  color: #CC2121;
+}
+#main ul.dropdown{
+  position: absolute;
+  width: 150px;
+  left: -50px;
+}
+.dropdown{
+  height: 220px;
+  display: none;
+}
+.dropdown li{
+  height: 40px;
+  background-color: wheat;
+  border-bottom: 1px solid white;
+}
+.dropdown li:last-child{
+  border-bottom: none;
+}
+.dropdown li a{
+  text-decoration: none;
+  opacity: 0.5;
+  line-height: 40px;
+  font-size: 14.4px;
+  font-weight: bold;
+  padding-left: 15px;
+  color:black;
+}
+.dropdown li:hover{
+  background-color: #f5f1f1;
+}
+#main li:hover .dropdown{
+  display: block;
+  text-shadow: 0px 0px 1px #fff;
+}
+.sub {
+  width: 31%;
+  display: flex;
+}
+.search input{
+  padding: 10px 80px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.user i{
+  font-size: 20px;
+  line-height: 80px;
+  margin-left: 20px;
+  color: black;
+}
+ /*Content*/ 
+ #content {
+   left: 0px;
+ }
+  .upper1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  .upper2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .gtsp {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+  }
+  .gtsp h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    color:#626a67;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: oblique;
+  }
+  .gtsp h3 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color: rgb(75, 59, 59);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+  }
+  .sanpham {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sanpham .item {
+    width: 290px;
+    height: 374px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+  }
+
+  .sanpham .item img {
+    display: block;
+    margin: 0 auto;
+    margin-top:17px;
+    width: 300px;
+    height: 250px;
+  } 
+  .sanpham .item .price{
+    color: #CC2121;
+  }
+/*Footer*/ 
+#footer{
+  display: flex;
+  justify-content: space-around;
+}
+#footer h3{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#footer img{
+  width: 350px;
+  height: 200px;
+}
+#footer li{
+  margin-top: 10px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+#footer ul li:hover a{
+  color:#CC2121;
+}
+#footer ul li a{
+  text-decoration: none;
+  color: black;
+}

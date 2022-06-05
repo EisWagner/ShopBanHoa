@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./Sources/css/index.css">
+    <link rel="stylesheet" href="./Sources/css/auth-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./Sources/img/thiết kế WeB (1).png" alt="logo"></a>
+        </div>
+        <ul id="main">
+            <li><a style="color:#CC2121; opacity: 1;" href="index.html">TRANG CHỦ</a></li>
+            <li><a href="./introduce.html">GIỚI THIỆU</a></li> 
+            <li><a href="./product-portfolio.html">CÁC LOẠI HOA</a>
+                <ul class="dropdown">
+                    <li><a href="./product-portfolio.html">Hoa Khai Trương</a></li>
+                    <li><a href="#">Hoa Sinh Nhật</a></li>
+                    <li><a href="#">Hoa Cưới</a></li>
+                    <li><a href="#">Hoa Lãng Mạn</a></li>
+                    <li><a href="#">Hoa Chúc Mừng</a></li>
+                </ul>  
+            <li><a href="#">LIÊN HỆ</a></li>  
+            <li><a href="nofication.html">THÔNG BÁO</a></li>
+        </ul>
+        <div class="sub">
+            <div class="search">
+                <input type="search" placeholder="Bạn muốn tìm gì">
+            </div>
+            <div class="user">
+                <a href="./dangki.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="./auth-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>   
+            </div>   
+        </div>
+    </div>
+    <div style="height:80px;"></div>
+    <div id="title">
+        <p><a style="text-decoration:none; color:black; opacity: 0.5;" href="./index.html">TRANG CHỦ / </a>GIỎ HÀNG</p>
+    </div>
+    <div id="content">
+        <div id="left-cart">
+            <table>
+                <tr>
+                    <th style="text-align: left;">SẢN PHẨM</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+                <tr>
+                    <td style="display: flex;">
+                        <input type="checkbox" style="height: 65px;">
+                        <a href="./product.html" class="a-text"> <img style="height: 70px; width: 70px;" src="./Sources/img/Ha1.jpeg" alt=""> </a>
+                        <div><a href="./product.html" class="a-text"> Blooms Of Magnificence</a></div>
+                    </td>
+                    <td style="color: #222;">
+                        <span style="text-decoration: line-through;opacity: 50%;">2,899,000<u>đ</u></span>
+                        2,799.000<u>đ</u></td>
+                    <td>
+                        <div class="soLuong">
+                            <label class="soLuongGiam" onclick="document.getElementById('soluong_366_0_0').value=parseInt(document.getElementById('soluong_366_0_0').value)-1;
+                            luuthongtingiohang_no_r('366_0_0');">-</label>
+                            <input onchange="luuthongtingiohang_no_r('366_0_0');" id="soluong_366_0_0" type="text" value="1">
+                            <label class="soLuongTang" onclick="document.getElementById('soluong_366_0_0').value=parseInt(document.getElementById('soluong_366_0_0').value)+1;
+                            luuthongtingiohang_no_r('366_0_0');">+</label>
+                        </div>
+                    </td>
+                    <td style="color: #CC2121;">2,799.000<u>đ</u></td>
+                    <td><i class="fa-solid fa-trash-can" style="float: right"></i></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="continue">
+                <a href="./product.html">Tiếp tục mua sắm
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div id="right-cart">
+            <div class="cart-totals">
+                <table>
+                    <tr>
+                        <th>THÔNG TIN ĐƠN HÀNG</th>
+                    </tr>
+                    <tr>
+                        <td>Tạm tính:</td>
+                        <td>2,799,000đ</td>
+                    </tr>
+                    <tr>
+                        <td>Phụ phí:</td>
+                        <td>0đ</td>
+                    </tr>
+                    <tr>
+                        <td>Giảm giá:</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Hóa đơn VAT:</td>
+                        <td>8%</td>
+                    </tr>
+                    <tr>
+                        <td>Tổng cộng:</td>
+                        <td>2,799,000đ</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            <div class="vouchers">
+                Phiếu giảm giá
+                <hr>
+                <input type="text" placeholder="Chọn hoặc nhập mã" style="width: 290px;">
+                <input type="button" value="Áp dụng" style="background-color: #CC2121; color: white; font-weight: bold;">
+            </div>
+            <br>
+            <div class="click">
+                <a href="./index.html">Đặt hàng</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer">
+        <div>
+            <a href=".index.html"><img src="./Sources/img/thiết kế WeB (1).png"></a>
+            <p>
+                Chỉ từ 199k - Mua hoa tươi không lo về giá. Giao<br>
+                hàng miễn phí trong ngày, khu vực nội thành Hà Nội,<br>
+                TpHCM. Thu tiền mặt tận nơi, chuyển khoản hoặc<br>
+                thanh toán qua thẻ. Lựa chọn hoàn hỏa cho những<br>
+                dịp đặc biệt: Sinh Nhật, Kỉ Niệm, Lãng Mạng, Ngày<br>
+                Phụ Nữ, Ngày Valentine, Ngày của mẹ. Ngoài ra,<br>
+                Tiệm Hoa Của Đ & A nhận đặt vòng hoa, kệ hoa khai trương,<br>
+                chúc mừng và cho các dịp khác.
+            </p>
+        </div>
+        <div>
+            <h3>LIÊN KẾT TRANG WEB</h3>
+            <ul>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Đối tác tiêu biểu</a></li>
+                <li><a href="#">Doanh nghiệp</a></li>
+                <li><a href="#">Hướng dẫn chăm sóc khách hàng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <ul>
+                <li><a href="#">Liên hệ với chúng tôi</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Phương thức thanh toán</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Các điều khoản chi tiết</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="margin-left:50px">BẠN CÓ CÂU HỎI?</h3>
+            <ul>
+                <li><a href="#">
+                    Thứ Hai - Chủ Nhật
+                    (9:00 - 18:00)
+                </a></li>
+                <li><a href="#">Hotline: 0378915967</a></li>
+                <li><a href="#">Email: phanduyvietanh@gmail.com</a></li>
+                <li><a href="#">Đối tác: dangsolun123@gmail.com</a></li>
+                <li><a href="#">Maketing truyền thông: HUFI</a></li>
+            </ul>
+        </div>
+    </div> 
+    <hr>
